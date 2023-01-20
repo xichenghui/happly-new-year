@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明日方舟-新年好！</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+</head>
+<body>
+    <div class="main"> 
+        <!-- <div class="video-box">
+            <video class="video-content" loop autoplay src="./images/bgvideo.mp4"></video>
+        </div> -->
+        <header>
+            <div class="top_left">
+                <img src="./images/1.png">
+                <img src="./images/2.png">
+                <img src="./images/3.png">
+                <img src="./images/4.png">
+            </div>
+            <div class="top_right">
+                <div class="top_date">
+                    <img src="./images/8.png">
+                    <h3>历添新岁月，福满旧山河！</h3>
+                </div>
+                <div class="top_resource">
+                    <div><img src="./images/5.png" alt="" srcset=""><span>2023</span></div>
+                    <div><img src="./images/6.png" alt="" srcset=""><span>2023</span></div>
+                    <div><img src="./images/7.png" alt="" srcset=""><span>2023</span></div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="l_content">
+                <div>
+                    <div class="firework">
+                        <a href="./烟花/index.html">点燃烟花</a>
+                    </div>
+                </div>
+                <div id="hide_five">
+                    <div  class="l_info">
+                        <div class="rank">
+                            <span>120</span>
+                        </div>
+                        <h3>榆火盛宁</h3>
+                    </div>
+                    <div class="r_info">
+                        <img src="./images/9.png" alt="">
+                        <img src="./images/10.png" alt="">
+                    </div>
+
+                </div>
+                <div>
+                    <span id="hide">隐藏</span>
+                    <span id="show">显示</span>
+                    <span style="font-size:50px;">
+                        <h3>好友</h3>
+                        <h3>档案</h3>
+                    </span>
+                </div>
+            </div>
+            <div  class="r_content">
+               <div id="hide_one" class="one">
+                <div>
+                    <div class="tili">130</div>
+                    <span>每天都是元气满满！</span>
+                </div>
+                <div><img src="./images/老女人.jpg" alt="" srcset=""></div>
+               </div>
+               <div id="hide_two" class="two">
+                <div class="formation">
+                    编队
+                </div>
+                <div class="line"></div>
+                <div class="member">
+                    成员
+                </div>
+               </div>
+               <div id="hide_three" class="three">
+                <div class="shop">
+                    商店
+                </div>
+                <div class="line">
+                </div>
+                <div class="conscribe">
+                    <div class="free">
+                        公开招募
+                    </div>
+                    <div class="unfree">
+                        干员寻访
+                    </div>
+                </div>
+               </div>
+               <div id="hide_four" class="four">
+                    <div class="task">
+                        任务
+                    </div>
+                    <div class="line">
+                    </div>
+                    <div class="basic">
+                        基建
+                    </div>
+                    <div class="line">
+                    </div>
+                    <div class="depot">
+                        仓库
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $("#hide").click(function(){
+            $("#hide_one,#hide_two,#hide_three,#hide_four,#hide_five").hide(1000,"linear",function(){
+                $("#hide").css("display","none")
+                $("#show").css("display","block")
+            })
+        })
+        $("#show").click(function(){
+            $("#hide_one,#hide_two,#hide_three,#hide_four,#hide_five").show(1000,"linear",function(){
+                $("#hide").css("display","block")
+                $("#show").css("display","none")
+            })
+        })
+    </script>
+</body>
+</html>
